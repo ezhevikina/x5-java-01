@@ -4,6 +4,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ReversedStringsArrayTest {
+  @Test
+  public void nullArray() {
+    String[] strings = null;
+    assertArrayEquals(null, ReversedStringsArray.reverseArray(strings));
+  }
 
   @Test
   public void emptyStringsArray() {

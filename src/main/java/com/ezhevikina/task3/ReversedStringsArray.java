@@ -3,7 +3,7 @@ package com.ezhevikina.task3;
 public class ReversedStringsArray {
 
   public static String[] reverseArray(String[] array) {
-    if (array.length < 2) {
+    if (array == null || array.length < 2) {
       return array;
     }
 

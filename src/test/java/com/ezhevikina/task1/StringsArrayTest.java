@@ -5,6 +5,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class StringsArrayTest {
+  @Test
+  public void nullArray() {
+    String[] strings = null;
+    assertArrayEquals(null, StringsArray.sortStringsByLength(strings));
+  }
 
   @Test
   public void emptyStringsArray() {
